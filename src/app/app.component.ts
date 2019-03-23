@@ -5,6 +5,15 @@ import { Component } from '@angular/core';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
+
+@Component({
+  selector: 'road-light',
+  templateUrl: './road-light/road-light.component.html',
+  styleUrls: ['./road-light/road-light.component.css']
+})
+
 export class AppComponent {
-  title = 'angular-intro';
+  title = 'Angular-intro-uppgift';
 }
+import RoadLightComponent from './road-light/road-light.component';
+//import BookATripComponent from './book-a-trip/book-a-trip.component.ts';

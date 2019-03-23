@@ -1,0 +1,43 @@
+.trafikLight {
+  border: 2px solid black;
+  display: inline-block;
+  border-radius: 15px;
+}
+
+.lightOff {
+  border: 1px solid black;
+  border-radius: 50%;
+  width: 5em;
+  height: 5em;
+}
+
+.redLight {
+  background-color: red;
+  border: 1px solid black;
+  border-radius: 50%;
+  width: 5em;
+  height: 5em;
+}
+
+.yellowLight {
+  background-color: yellow;
+  border: 1px solid black;
+  border-radius: 50%;
+  width: 5em;
+  height: 5em;
+
+}
+
+.greenLight {
+  background-color: green;
+  border: 1px solid black;
+  border-radius: 50%;
+  width: 5em;
+  height: 5em;
+
+}
+
+.changeLight {
+  width: 5em;
+  font-style: oblique;
+}
