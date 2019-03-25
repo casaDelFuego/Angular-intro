@@ -13,7 +13,7 @@ export class RoadLightComponent implements OnInit {
 
   nextState() {
     this.state++;
-    if (this.state>2) {
+    if (this.state==3) {
       this.state=0;
     }
   }

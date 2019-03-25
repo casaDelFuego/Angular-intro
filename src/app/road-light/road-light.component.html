@@ -1,11 +1,13 @@
-<p>
+<h2>
   Road-light!
-</p>
+</h2>
+
 <div class="trafikLight">
-  <div [className]="state == 0 ? 'redLight' : 'lightOff'"></div>
-  <div [className]="state == 1 ? 'yellowLight' : 'lightOff'"></div>
+  <div [className]="state == 0 || state == 1? 'redLight' : 'lightOff'"></div>
+  <div [className]="state == 1 || state == 3? 'yellowLight' : 'lightOff'"></div>
   <div [className]="state == 2 ? 'greenLight' : 'lightOff'"></div>
 </div>
+
 <div>
   <button (click)="nextState()" class="changeLight">GO!</button>
 </div>

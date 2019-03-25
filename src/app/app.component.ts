@@ -16,4 +16,5 @@ export class AppComponent {
   title = 'Angular-intro-uppgift';
 }
 import RoadLightComponent from './road-light/road-light.component';
+import TripChildComponent from './book-a-trip/trip-child/trip-child.component';
 //import BookATripComponent from './book-a-trip/book-a-trip.component.ts';

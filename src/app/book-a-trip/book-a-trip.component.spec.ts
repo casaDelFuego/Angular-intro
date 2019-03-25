@@ -1,6 +1,7 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { BookATripComponent } from './book-a-trip.component';
+import { TripChildComponent } from './book-a-trip/trip-child/trip-child.component';
 
 describe('BookATripComponent', () => {
   let component: BookATripComponent;
