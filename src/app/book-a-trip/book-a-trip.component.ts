@@ -1,4 +1,4 @@
-import { Component, OnInit, Switch } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-book-a-trip',
@@ -7,8 +7,7 @@ import { Component, OnInit, Switch } from '@angular/core';
 })
 
 export class BookATripComponent implements OnInit {
-  StockholmData: string = 'is very boring and expensive';
-  selectedCity: string = 'stockholm';
+  selectedCity: string = '';
 
   constructor() {
 

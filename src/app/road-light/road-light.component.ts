@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./road-light.component.css']
 })
 export class RoadLightComponent implements OnInit {
-
+  state: number = 0;
   constructor() {}
 
   nextState() {
@@ -17,7 +17,7 @@ export class RoadLightComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.state = 0;
+
 
   }
 

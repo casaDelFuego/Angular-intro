@@ -1,0 +1,13 @@
+<h2>List of transportation you can use for your trip</h2>
+<ul>
+    <li *ngFor="let t of transport" [className]="t.selected ? 'selected' : ''">
+      <span (click)="markTransport(t)">
+      {{t.name}}
+      </span>
+      <button class="btn" (click)="remove(t)">✖</button>
+    </li>
+</ul>
+<div>
+  <input type="text" [(ngModel)]="transportName" />
+  <button class="btn" (click)="addTransport()">Add</button>
+</div>

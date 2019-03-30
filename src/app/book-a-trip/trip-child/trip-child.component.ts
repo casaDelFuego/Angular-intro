@@ -1,4 +1,4 @@
-import { Component, OnInit, Input, Switch } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-trip-child',
@@ -14,7 +14,7 @@ export class TripChildComponent implements OnInit {
   constructor() {
 
   }
-    
+
   ngOnInit() {
   }
 

@@ -1,9 +1,7 @@
-<p>
-  book-a-trip!
-</p>
-<h1>
-  This is the parent component!
-</h1>
+
+<h2>
+  Where would you like to go?
+</h2>
 
 <div class="tabTitles">
   <button class="destinations" (click)="markTheTab('stockholm')">Stockholm</button>
@@ -12,5 +10,4 @@
   <button class="destinations" (click)="markTheTab('berlin')">Berlin</button>
 </div>
 
-<app-trip-child [StockholmData]="StockholmData" [destinations]="selectedCity"
-staticdata="This is static data!">this is what's in child tag</app-trip-child>
+<app-trip-child [destinations]="selectedCity"></app-trip-child>
