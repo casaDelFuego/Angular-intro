@@ -7,9 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RoadLightComponent implements OnInit {
 
-  constructor() {
-
-  }
+  constructor() {}
 
   nextState() {
     this.state++;

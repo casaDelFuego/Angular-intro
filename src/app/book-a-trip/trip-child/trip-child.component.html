@@ -5,3 +5,27 @@
 <div class="childContent">
   {{ StockholmData }},{{ staticdata }}
 </div>
+
+
+<div [ngSwitch]="destinations">
+  <div *ngSwitchCase="'stockholm'">
+     <h1>Stockholm</h1>
+     <p>Very expensive and boring</p>
+  </div>
+  <div *ngSwitchCase="'paris'">
+     <h1>Paris</h1>
+     <p>Good wine and culture but expensive food</p>
+  </div>
+  <div *ngSwitchCase="'prague'">
+     <h1>Prague</h1>
+     <p>Cheap beer and food, amazing architecture</p>
+  </div>
+  <div *ngSwitchCase="'berlin'">
+     <h1>Berlin</h1>
+     <p>Cheap beer and you can smoke inside bars</p>
+  </div>
+  <div *ngSwitchDefault>
+     <h1>Switch</h1>
+     <p>Select the city you wanna go to</p>
+  </div>
+</div>

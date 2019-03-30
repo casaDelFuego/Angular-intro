@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Switch } from '@angular/core';
 
 @Component({
   selector: 'app-book-a-trip',
@@ -8,9 +8,15 @@ import { Component, OnInit } from '@angular/core';
 
 export class BookATripComponent implements OnInit {
   StockholmData: string = 'is very boring and expensive';
+  selectedCity: string = 'stockholm';
 
   constructor() {
 
+  }
+
+  markTheTab(city) {
+    console.log(city);
+    this.selectedCity = city;
   }
 
   ngOnInit() {

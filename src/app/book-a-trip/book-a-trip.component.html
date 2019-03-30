@@ -6,11 +6,11 @@
 </h1>
 
 <div class="tabTitles">
-  <button class="destinations" (click)="markTheTab()">Stockholm</button>
-  <button class="destinations" (click)="markTheTab()">Paris</button>
-  <button class="destinations" (click)="markTheTab()">London</button>
-  <button class="destinations" (click)="markTheTab()">Berlin</button>
+  <button class="destinations" (click)="markTheTab('stockholm')">Stockholm</button>
+  <button class="destinations" (click)="markTheTab('paris')">Paris</button>
+  <button class="destinations" (click)="markTheTab('prague')">Prague</button>
+  <button class="destinations" (click)="markTheTab('berlin')">Berlin</button>
 </div>
 
-<app-trip-child [StockholmData]="StockholmData"
+<app-trip-child [StockholmData]="StockholmData" [destinations]="selectedCity"
 staticdata="This is static data!">this is what's in child tag</app-trip-child>

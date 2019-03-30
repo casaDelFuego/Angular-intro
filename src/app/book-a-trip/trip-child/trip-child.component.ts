@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Switch } from '@angular/core';
 
 @Component({
   selector: 'app-trip-child',
@@ -9,9 +9,12 @@ export class TripChildComponent implements OnInit {
 
   @Input() StockholmData: string;
   @Input() staticdata: string;
+  @Input() destinations: string;
 
-  constructor() { }
- //  markTheTab() {}
+  constructor() {
+
+  }
+    
   ngOnInit() {
   }
 
