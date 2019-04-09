@@ -1,8 +1,8 @@
 
-<div [ngSwitch]="destinations">
+<div [ngSwitch]="destinations" class="aboutCity">
   <div *ngSwitchCase="'stockholm'">
      <h3>Stockholm</h3>
-     <p>Very expensive and boring</p>
+     <p>Very expensive and cold</p>
   </div>
   <div *ngSwitchCase="'paris'">
      <h3>Paris</h3>
@@ -14,9 +14,9 @@
   </div>
   <div *ngSwitchCase="'berlin'">
      <h3>Berlin</h3>
-     <p>Cheap beer and you can smoke inside bars</p>
+     <p>Cheap beer and one can smoke indoors</p>
   </div>
   <div *ngSwitchDefault>
-     <p>Select the city you wanna go to</p>
+     <p>Select the city you would like to go to</p>
   </div>
 </div>

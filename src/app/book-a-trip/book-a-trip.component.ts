@@ -14,7 +14,7 @@ export class BookATripComponent implements OnInit {
   }
 
   markTheTab(city) {
-    console.log(city);
+    //console.log(city);
     this.selectedCity = city;
   }
 

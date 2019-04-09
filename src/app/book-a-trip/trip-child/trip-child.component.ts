@@ -7,8 +7,6 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class TripChildComponent implements OnInit {
 
-  @Input() StockholmData: string;
-  @Input() staticdata: string;
   @Input() destinations: string;
 
   constructor() {

@@ -1,4 +1,4 @@
-
+<div class="destinations">
 <h2>
   Where would you like to go?
 </h2>
@@ -8,6 +8,8 @@
   <button class="destinations" (click)="markTheTab('paris')">Paris</button>
   <button class="destinations" (click)="markTheTab('prague')">Prague</button>
   <button class="destinations" (click)="markTheTab('berlin')">Berlin</button>
+  <button class="destinations" (click)="markTheTab(null)">Reset</button>
 </div>
 
 <app-trip-child [destinations]="selectedCity"></app-trip-child>
+</div>

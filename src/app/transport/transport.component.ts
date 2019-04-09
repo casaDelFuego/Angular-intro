@@ -1,4 +1,4 @@
-import { Component, OnInit, Form, Input } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-transport',
@@ -6,7 +6,7 @@ import { Component, OnInit, Form, Input } from '@angular/core';
   styleUrls: ['./transport.component.css']
 })
 export class TransportComponent implements OnInit {
-  transport = [
+  transport: any = [
     {name: 'Plane', selected: false},
     {name: 'Train', selected: false},
     {name: 'Elephant', selected: false},
@@ -28,6 +28,7 @@ export class TransportComponent implements OnInit {
     })
     this.transportName="";
   }
+
   remove(t) {
     console.log(t);
     let i: number = this.transport.indexOf(t);
