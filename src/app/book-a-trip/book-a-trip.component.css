@@ -8,5 +8,6 @@ button:hover {
 }
 
 .destinations {
+  display: inline-block;
 
 }
