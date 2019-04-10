@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { TransportService } from './transport.service';
 
 @Component({
   selector: 'app-transport',
@@ -6,13 +7,7 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./transport.component.css']
 })
 export class TransportComponent implements OnInit {
-  transport: any = [
-    {name: 'Plane', selected: false},
-    {name: 'Train', selected: false},
-    {name: 'Elephant', selected: false},
-    {name: 'Car', selected: false},
-    {name: 'Bus', selected: false},
-  ];
+
 
   transportName: string='';
 
@@ -36,10 +31,17 @@ export class TransportComponent implements OnInit {
       this.transport.splice(i, 1);
     }
   }
-  constructor() { }
+
+  transport: any;
+
+  transportService: TransportService;
+
+  constructor(transportService: TransportService) {
+    this.transportService = transportService;
+  }
 
   ngOnInit() {
-
+    this.transport = this.transportService.getData();
   }
 
 }
